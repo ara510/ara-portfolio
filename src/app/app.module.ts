@@ -3,10 +3,21 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NhComponent } from './nh/nh.component';
+import { JlComponent } from './jl/jl.component';
+import { RfamComponent } from './rfam/rfam.component';
+import { AccComponent } from './acc/acc.component';
+import { AraBeatComponent } from './ara-beat/ara-beat.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NhComponent,
+    JlComponent,
+    RfamComponent,
+    AccComponent,
+    AraBeatComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,8 @@
   "files": [
     "src/main.ts",
     "src/main.server.ts",
-    "server.ts"
+    "server.ts",
+    "src/assets/js/main.js"
   ],
   "include": [
     "src/**/*.d.ts"
