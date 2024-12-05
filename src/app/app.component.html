@@ -66,7 +66,7 @@
                     <div>
                         <h2 class="about__subtitle">Hey there!<div class="hey"><p>👋🏼</p></div></h2>
                         <p class="about__text">
-                            I'm RAKOTOMAVO Nathan Andriamanalinarivo, a 25-year-old from Antananarivo, Madagascar. 🇲🇬 <br><br> By profession, I'm a web designer 🧑🏻‍💻, but I also have a passion for beat making 🎶. These two creative outlets are my true passions. I love building great things, whether it's designing sleek, responsive websites or crafting pulsating EDM tracks that get people moving. 💃🏽🕺🏽 <br> <br>
+                            I'm RAKOTOMAVO Nathan Andriamanalinarivo, a 26-year-old from Antananarivo, Madagascar.<br><br> By profession, I'm a web designer 🧑🏻‍💻, but I also have a passion for beat making 🎶. These two creative outlets are my true passions. I love building great things, whether it's designing sleek, responsive websites or crafting pulsating EDM tracks that get people moving. 💃🏽🕺🏽 <br> <br>
                             
                             When I'm not immersed in code or beats, you can find me exploring new tech trends, experimenting with soundscapes, or simply enjoying the vibrant culture of my beautiful country. Creativity fuels my life, and I'm always excited to see where my next project will take me. 🔥🔥</p>           
                     </div>                                   
@@ -207,11 +207,11 @@
                 <h2 class="section-title">Contact</h2> 
                 <p class="section-par"><a id="plane" class="fa-solid fa-envelope"></a> Leave me a message.</p>
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <button type="submit" id="sendbtn" class="contact__button button">Send</button>
+                    <form (ngSubmit)="onSubmit()" action="" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="mail" name="email"  placeholder="Email" class="contact__input">
+                        <textarea name="" id="" name="message"  cols="0" rows="10" class="contact__input"></textarea>
+                        <button id="sendbtn" type="button"  class="contact__button button">Send</button>
                     </form>
                 </div>
             </section>
@@ -221,9 +221,10 @@
         <footer class="footer">
             <a class="footer__title" href="mailto:nathna.mich98@gmail.com" >nathan.mich98&#64;gmail.com</a>
             <div class="footer__social">
-                <a href="https://www.facebook.com/andriam.nathan/" target="_blank" class="footer__icon"><i id="fb" class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/nathan.a.ra/" target="_blank" class="footer__icon"><i id="ig" class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/rakotomavo-nathan-3376052b5" target="_blank" class="footer__icon"><i id="in" class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.facebook.com/andriam.nathan/" target="_blank" class="footer__icon"><i id="fb" class='fa-brands fa-facebook-f' ></i></a>
+                <a href="https://www.instagram.com/nathan.a.ra/" target="_blank" class="footer__icon"><i id="ig" class='fa-brands fa-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/rakotomavo-nathan-3376052b5" target="_blank" class="footer__icon"><i id="in" class='fa-brands fa-linkedin-in' ></i></a>
+
             </div>
             <p class="footer__copy">&#169; ARA. All rigths reserved</p>
         </footer>

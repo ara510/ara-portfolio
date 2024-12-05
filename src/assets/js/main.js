@@ -61,7 +61,7 @@ const banner2 = document.getElementById('jl');
 const banner3 = document.getElementById('acc');
 const banner4 = document.getElementById('ara');
 const banner5 = document.getElementById('rfam');
-const banner6 = document.getElementById('sendbtn');
+/* const banner6 = document.getElementById('sendbtn'); */
 // Add a click event listener to the banner
 banner.addEventListener('click', function(event) {
     // Prevent the default action (if it's an anchor tag with a href, it won't navigate)
@@ -71,7 +71,7 @@ banner.addEventListener('click', function(event) {
     Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Page not available for now, coming soon... 😃",
+        text: "Page not available yet, coming soon... 😃",
       });
 });
 banner2.addEventListener('click', function(event) {
@@ -82,7 +82,7 @@ banner2.addEventListener('click', function(event) {
     Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Page not available for now, coming soon... 😃",
+        text: "Page not available yet, coming soon... 😃",
       });
 });
 banner3.addEventListener('click', function(event) {
@@ -93,7 +93,7 @@ banner3.addEventListener('click', function(event) {
     Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Page not available for now, coming soon... 😃",
+        text: "Page not available yet, coming soon... 😃",
       });
 });
 banner4.addEventListener('click', function(event) {
@@ -104,7 +104,7 @@ banner4.addEventListener('click', function(event) {
     Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Page not available for now, coming soon... 😃",
+        text: "Page not available yet, coming soon... 😃",
       });
 });
 banner5.addEventListener('click', function(event) {
@@ -137,20 +137,20 @@ banner5.addEventListener('click', function(event) {
           }
         });
 });
-banner6.addEventListener('click', function(event) {
+/* banner6.addEventListener('click', function(event) {
     // Prevent the default action (if it's an anchor tag with a href, it won't navigate)
     event.preventDefault();
     
     // Display the alert
     Swal.fire({
         title: "Sorry! 🥺",
-        text: "This button doesn't work for now",
+        text: "This button doesn't work yet.",
         imageUrl: "../assets/img/sr.png",
         imageWidth: 400,
         imageHeight: 400,
         imageAlt: "Custom image"
       });
-});
+}); */
 
 document.addEventListener('scroll', function() {
     const scrollPosition = window.pageYOffset;

@@ -8,6 +8,8 @@ import { JlComponent } from './jl/jl.component';
 import { RfamComponent } from './rfam/rfam.component';
 import { AccComponent } from './acc/acc.component';
 import { AraBeatComponent } from './ara-beat/ara-beat.component';
+import { HomeComponent } from './home/home.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,13 +20,15 @@ import { AraBeatComponent } from './ara-beat/ara-beat.component';
     RfamComponent,
     AccComponent,
     AraBeatComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

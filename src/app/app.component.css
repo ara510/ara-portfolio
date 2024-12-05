@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -445,7 +445,7 @@ img {
   margin-bottom: var(--mb-4);
 }
 .footer__icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   padding-inline: 10px;
   margin: 0 var(--mb-2);
@@ -455,32 +455,35 @@ img {
 }
 #fb {
   transition: 0.5s;
-  border-radius: 18px;
+  border-radius: 10px;
+  padding: 6px;
 }
 
 #fb:hover {
   background: #4267B2;
-  transform: scale(1.8);
+  transform: scale(1.2);
 }
 
 #ig {
   transition: 0.5s;
   border-radius: 10px;
+  padding: 6px;
 }
 
 #ig:hover {
   background: linear-gradient(40deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  transform: scale(1.8);
+  transform: scale(1.2);
 }
 
 #in {
   transition: 0.5s;
   border-radius: 10px;
+  padding: 6px;
 }
 
 #in:hover {
   background: #0077B5;
-  transform: scale(1.8);
+  transform: scale(1.2);
 }
 
 .section-par {
