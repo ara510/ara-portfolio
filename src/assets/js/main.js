@@ -79,11 +79,30 @@ banner2.addEventListener('click', function(event) {
     event.preventDefault();
     
     // Display the alert
-    Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Page not available yet, coming soon... 😃",
-      });
+    let timerInterval;
+        Swal.fire({
+        title: "You will be redirected to Les Joyeux Lurons's home page",
+        timer: 2300,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading();
+            const timer = Swal.getPopup().querySelector("b");
+            timerInterval = setInterval(() => {
+            timer.textContent = `${Swal.getTimerLeft()}`;
+            }, 100);
+            
+        },
+        willClose: () => {
+            clearInterval(timerInterval);
+            window.location.href = "https://lesjoyeuxlurons.com";
+          }
+        
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+          if (result.dismiss === Swal.DismissReason.timer) {
+            console.log("I was closed by the timer");
+          }
+        });
 });
 banner3.addEventListener('click', function(event) {
     // Prevent the default action (if it's an anchor tag with a href, it won't navigate)
@@ -115,7 +134,7 @@ banner5.addEventListener('click', function(event) {
     let timerInterval;
         Swal.fire({
         title: "You will be redirected to RFAM's home page",
-        timer: 3000,
+        timer: 2300,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading();
